@@ -1,0 +1,10 @@
+@mixin container {
+  width: 284px;
+
+  margin: 0 auto;
+}
+
+@mixin container-fluid {
+  width: 90%;
+  margin: 0 5%;
+}

@@ -1,0 +1,19 @@
+.logo {
+  @include container-fluid;
+  position: relative;
+}
+
+.logo img {
+  position: absolute;
+  left: 0;
+
+  width: 64px;
+
+  @media ($media_tablet) {
+    width: 150px;
+  }
+
+  @media ($media_desktop) {
+    width: 258px;
+  }
+}

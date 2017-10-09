@@ -1,0 +1,35 @@
+{
+  "name": "kozak",
+  "version": "1.0.0",
+  "description": "sedona",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitrybndar/sedonagit.git"
+  },
+  "author": "dmitrybondar",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dmitrybndar/sedonaissues"
+  },
+  "homepage": "https://github.com/dmitrybndar/sedonareadme",
+  "devDependencies": {
+    "autoprefixer": "^7.1.5",
+    "browser-sync": "^2.18.13",
+    "css-mqpacker": "^6.0.1",
+    "del": "^3.0.0",
+    "gulp": "^3.9.1",
+    "gulp-csso": "^3.0.0",
+    "gulp-imagemin": "^3.4.0",
+    "gulp-plumber": "^1.1.0",
+    "gulp-postcss": "^7.0.0",
+    "gulp-rename": "^1.2.2",
+    "gulp-sass": "^3.1.0"
+  },
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
+}
