@@ -4,12 +4,14 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>КОЗАК</title>
-  <link rel="stylesheet" href="style.css">
+  <link rel="stylesheet" href="css/style.min.css">
 </head>
 <body>
   <header class="page-header">
     <div class="logo">
-      <img src="img/logo.png" alt="Козак логотип">
+      <a>
+        <img src="img/logo.png" alt="Козак логотип">
+      </a>
     </div>
     <div class="top-line">
       <p class="top-line__wrapper">
@@ -17,7 +19,21 @@
         тел.:   <a class="top-line__link" href="tel:+380639370474">+38 063 93 704 74,</a>
                 <a class="top-line__link" href="tel:+380509390609">+38 050 939 06 09</a>
       </p>
-
+    </div>
+    <nav class="main-nav">
+      <button class="main-nav__toggle">Меню<span class="main-nav__toggle-border"></span></button>
+      <ul class="main-nav__list">
+        <li class="main-nav__item main-nav__item--active"><a class="main-nav__link">Головна</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Наша продукція</a></li>
+        <li class="main-nav__item"><a class="main-nav__link" href="#">Контакти</a></li>
+      </ul>
+    </nav>
   </header>
+
+  <div class="index-img">
+    <img src="img/index-img.jpg" alt="Вкусные колбаски">
+  </div>
+
+<script src="js/scripts.js"></script>
 </body>
 </html>

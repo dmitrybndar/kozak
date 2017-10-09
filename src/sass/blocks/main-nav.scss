@@ -1,0 +1,173 @@
+.main-nav {
+  @include container-fluid;
+
+  position: relative;
+
+  font-family: 'Akrobat', 'Arial', sans-serif;
+  font-weight: 600;
+  text-transform: uppercase;
+  text-align: right;
+
+  &--open .main-nav__list {
+    opacity: 1;
+  }
+
+  &--open .main-nav__toggle {
+    color: $red;
+    outline: none;
+
+    & .main-nav__toggle-border {
+      display: block;
+    }
+  }
+}
+
+.main-nav__list {
+  position: absolute;
+  right: 0;
+
+  padding: 20px 0;
+  margin: 0;
+  min-width: 200px;
+
+  opacity: 0;
+  box-shadow: 0 1px 3px #000;
+  background-color: $accent;
+  list-style-type: none;
+  text-align: center;
+
+  transition: opacity 0.4s ease;
+}
+
+.main-nav__link {
+  display: inline-block;
+  padding: 10px;
+
+  font-size: 14px;
+  text-decoration: none;
+  color: #000;
+  position: relative;
+
+  &::before {
+    content: '';
+    display: none;
+    position: absolute;
+    bottom: 5px;
+    left: 10px;
+    right: 10px;
+    height: 2px;
+    background-color: $red;
+  }
+
+  &:hover,
+  &:active {
+    color: $red;
+  }
+}
+
+.main-nav__item--active .main-nav__link {
+  color: $red;
+
+  &::before {
+    display: block;
+  }
+}
+
+.main-nav__toggle {
+  display: inline-block;
+  vertical-align: top;
+  border: none;
+  background: none;
+  position: relative;
+
+  font-family: 'Akrobat', 'Arial', sans-serif;
+  font-weight: 600;
+  font-size: 16px;
+  text-transform: uppercase;
+  padding: 5px 10px;
+
+  &::before,
+  &::after {
+    content: '';
+    position: absolute;
+    top: 12px;
+
+    border-radius: 50%;
+    width: 4px;
+    height: 4px;
+    background-color: $accent;
+  }
+
+  &::after {
+    right: 0;
+  }
+
+  &::before {
+    left: 0;
+  }
+}
+
+.main-nav__toggle-border {
+  display: none;
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  right: 10px;
+  height: 2px;
+  background-color: $red;
+}
+
+@media ($media_tablet) {
+  .main-nav__toggle {
+    display: none;
+  }
+
+  .main-nav__list {
+    position: static;
+
+    padding: 0;
+    opacity: 1;
+    background: none;
+    box-shadow: none;
+    text-align: right;
+  }
+
+  .main-nav__item {
+    display: inline-block;
+  }
+
+  .main-nav__link {
+    font-size: 20px;
+    padding: 25px;
+
+    &::before {
+      height: 6px;
+      bottom: 0;
+      left: 20px;
+      right: 20px;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: 32px;
+      right: 0;
+
+      border-radius: 50%;
+      width: 8px;
+      height: 8px;
+      background-color: $accent;
+    }
+  }
+}
+
+@media ($media_desktop) {
+  .main-nav__link {
+    font-size: 30px;
+    padding: 25px;
+
+    &::after {
+      top: 38px;
+    }
+  }
+}

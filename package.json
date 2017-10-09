@@ -1,21 +1,20 @@
 {
   "name": "kozak",
   "version": "1.0.0",
-  "description": "sedona",
+  "description": "",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/dmitrybndar/sedonagit.git"
+    "url": "git+https://github.com/dmitrybndar/kozak.git"
   },
   "author": "dmitrybondar",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/dmitrybndar/sedonaissues"
+    "url": "https://github.com/dmitrybndar/kozakissues"
   },
-  "homepage": "https://github.com/dmitrybndar/sedonareadme",
+  "homepage": "https://github.com/dmitrybndar/kozakreadme",
   "devDependencies": {
     "autoprefixer": "^7.1.5",
     "browser-sync": "^2.18.13",

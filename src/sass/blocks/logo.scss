@@ -9,11 +9,15 @@
 
   width: 64px;
 
+  @media (min-width: 500px) {
+    width: 70px;
+  }
+
   @media ($media_tablet) {
     width: 150px;
   }
 
   @media ($media_desktop) {
-    width: 258px;
+    width: 200px;
   }
 }

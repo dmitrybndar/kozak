@@ -18,7 +18,15 @@
   }
 
   @media ($media_tablet) {
+    padding-left: 150px;
     font-size: 14px;
+  }
+
+  @media ($media_desktop) {
+    padding-left: 260px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    font-size: 18px;
   }
 }
 
@@ -27,6 +35,10 @@
   text-decoration: none;
   color: #545454;
   white-space: nowrap;
+
+  &:hover {
+    color: $accent;
+  }
 
   &:first-child {
     margin-right: 5px;
