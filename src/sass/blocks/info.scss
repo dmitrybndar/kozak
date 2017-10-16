@@ -1,0 +1,12 @@
+.info {
+  @include container-fluid;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+
+@media ($media_tablet) {
+  .info {
+    flex-direction: row;
+  }
+}
