@@ -1,0 +1,30 @@
+.page-footer {
+  padding-top: 10px;
+  padding-bottom: 10px;
+
+  background-color: #555555;
+  text-align: center;
+}
+
+.page-footer__copyright {
+  margin: 0;
+  font-size: 8px;
+  color: #fff;
+}
+
+@media ($media_tablet) {
+  .page-footer {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .page-footer__copyright {
+    font-size: 10px;
+  }
+}
+
+@media ($media_desktop) {
+  .page-footer__copyright {
+    font-size: 12px;
+  }
+}

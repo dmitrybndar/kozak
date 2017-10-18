@@ -1,0 +1,26 @@
+.btn {
+  display: inline-block;
+  vertical-align: top;
+  padding: 12px 40px;
+
+  cursor: pointer;
+  border: none;
+  background: $accent;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fff;
+  font-size: 13px;
+  font-weight: bold;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+@media ($media_desktop) {
+  .btn {
+    font-size: 20px;
+    padding: 15px 46px;
+  }
+}
+

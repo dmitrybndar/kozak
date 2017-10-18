@@ -1,5 +1,5 @@
 .main-nav {
-  @include container-fluid;
+  @include container;
 
   position: relative;
 
@@ -164,10 +164,15 @@
 @media ($media_desktop) {
   .main-nav__link {
     font-size: 30px;
-    padding: 25px;
+    padding: 25px 40px;
+
+    &:before {
+      left: 38px;
+      right: 38px;
+    }
 
     &::after {
-      top: 38px;
+      top: 39px;
     }
   }
 }

@@ -1,5 +1,5 @@
 .logo {
-  @include container-fluid;
+  @include container;
   position: relative;
 }
 
@@ -8,10 +8,6 @@
   left: 0;
 
   width: 64px;
-
-  @media (min-width: 500px) {
-    width: 70px;
-  }
 
   @media ($media_tablet) {
     width: 150px;

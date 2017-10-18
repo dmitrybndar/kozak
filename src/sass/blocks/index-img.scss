@@ -21,15 +21,12 @@
 
 @media ($media_tablet) {
   .index-img {
-    padding-bottom: 22px;
+    padding-bottom: 19px;
+    margin-bottom: 10px;
 
     &::after {
       height: 6px;
     }
   }
-}
-
-@media ($media_desktop) {
-
 }
 

@@ -1,0 +1,152 @@
+.popular {
+  padding-top: 16px;
+  padding-bottom: 20px;
+  position: relative;
+
+  background: #eeedeb url('../img/popular-pattern.jpg') 0 0 repeat;
+}
+
+.popular__wrapper {
+  @include container;
+
+  position: relative;
+  text-align: center;
+  overflow: hidden;
+}
+
+.popular__list {
+  width: 9999px;
+  text-align: start;
+
+  transition: transform .6s ease-in-out;
+}
+
+.popular__title {
+  text-align: left;
+  margin: 0;
+  margin-top: 10px;
+  margin-bottom: 13px;
+  padding-left: 24px;
+  position: relative;
+
+  font-size: 20px;
+  font-weight: normal;
+  color: #000;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    height: 24px;
+    width: 4px;
+    background-color: $accent;
+  }
+}
+
+.popular__prev,
+.popular__next {
+  position: absolute;
+  bottom: 10px;
+  cursor: pointer;
+
+  width: 20px;
+  height: 20px;
+  border-left: 5px solid $accent;
+  border-bottom: 5px solid $accent;
+
+  &:hover {
+    opacity: .7;
+  }
+}
+
+.popular__prev {
+  transform: rotate(45deg);
+  left: 5px;
+}
+
+.popular__next {
+  transform: rotate(-135deg);
+  right: 5px;
+}
+
+@media ($media_tablet) {
+  .popular__title {
+    font-size: 30px;
+
+    &::before {
+      height: 34px;
+      width: 6px;
+    }
+  }
+
+  .popular__prev {
+    left: 50px;
+  }
+
+  .popular__next {
+    right: 50px;
+  }
+}
+
+@media ($media_desktop) {
+  .popular {
+    padding-bottom: 30px;
+
+    &::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+
+      width: 230px;
+      height: 247px;
+      background: url('../img/popular-bottom.png');
+      z-index: 1;
+    }
+
+    &::after {
+      content: '';
+      position: absolute;
+      top: -50px;
+      right: 0;
+
+      width: 249px;
+      height: 187px;
+      background: url('../img/popular-top.png');
+      z-index: 1;
+    }
+  }
+
+  .popular__wrapper {
+    width: 1140px;
+    padding-left: 0;
+    padding-right: 0;
+  }
+
+  .popular__title {
+    font-size: 40px;
+    padding-left: 30px;
+
+    &::before {
+      height: 44px;
+      width: 8px;
+    }
+  }
+
+  .popular__prev,
+  .popular__next {
+    width: 30px;
+    height: 30px;
+    bottom: 12px;
+    border-width: 8px;
+  }
+
+  .popular__prev {
+    left: 350px;
+  }
+
+  .popular__next {
+    right: 350px;
+  }
+}

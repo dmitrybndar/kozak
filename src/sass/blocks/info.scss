@@ -1,12 +1,20 @@
 .info {
-  @include container-fluid;
+  @include container;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
+  margin-bottom: 38px;
 }
 
 @media ($media_tablet) {
   .info {
     flex-direction: row;
+    margin-bottom: 54px;
+  }
+}
+
+@media ($media_desktop) {
+  .info {
+    margin-bottom: 84px;
   }
 }

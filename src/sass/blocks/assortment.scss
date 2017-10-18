@@ -3,7 +3,7 @@
   margin-top: 70px;
   margin-right: 44px;
   padding-top: 140px;
-  padding-left: 30px;
+  padding-left: 50px;
   padding-right: 24px;
 
   border: 8px solid $accent;
@@ -23,6 +23,7 @@
 }
 
 .assortment__descr {
+  margin-bottom: 15px;
   font-size: 9px;
   color: $dark;
 }
@@ -60,7 +61,7 @@
 @media ($media_tablet) {
   .assortment {
     width: 260px;
-    padding-left: 26px;
+    padding-left: 28px;
     padding-top: 170px;
   }
 
@@ -93,21 +94,23 @@
 
 @media ($media_desktop) {
   .assortment {
-    width: 440px;
-    margin-top: 102px;
-    padding-left: 77px;
+    width: 410px;
+    margin-top: 108px;
+    padding-left: 59px;
     padding-top: 240px;
     margin-right: 78px;
   }
 
   .assortment img {
     width: 420px;
-    top: -82px;
-    right: -75px;
+    top: -78px;
+    right: -82px;
   }
 
   .assortment__title {
     font-size: 31px;
+    margin-top: 10px;
+    margin-bottom: 10px;
   }
 
   .assortment__descr {
@@ -118,7 +121,7 @@
     font-size: 18px;
     padding-left: 32px;
     bottom: 54px;
-    right: -135px;
+    right: -106px;
 
     &::before {
       width: 22px;

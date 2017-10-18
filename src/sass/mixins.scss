@@ -1,9 +1,15 @@
-@mixin container-fluid {
-  width: 90%;
-  margin: 0 5%;
-  max-width: 1200px;
+@mixin container {
+  width: 320px;
+  padding: 0 5px;
+  margin: 0 auto;
+
+  @media ($media_tablet) {
+    width: 768px;
+    padding: 0 10px;
+  }
 
   @media ($media_desktop) {
-    margin: 0 auto;
+    width: 1200px;
+    padding: 0 30px;
   }
 }

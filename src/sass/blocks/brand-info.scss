@@ -31,7 +31,7 @@
 @media ($media_tablet) {
   .brand-info {
     padding-left: 30px;
-    width: 55%;
+    width: 410px;
   }
 
   .brand-info__title {
@@ -49,6 +49,10 @@
 }
 
 @media ($media_desktop) {
+  .brand-info {
+    width: 570px;
+  }
+
   .brand-info__title {
     font-size: 40px;
 
