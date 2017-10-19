@@ -10,6 +10,8 @@ const gulp         = require('gulp'),
       mqpacker     = require('css-mqpacker'),
       minify       = require('gulp-csso'),
       rename       = require('gulp-rename'),
+      uglify       = require('gulp-uglify'),
+      pump         = require('pump'),
       imagemin     = require('gulp-imagemin');
 
 gulp.task('style', function () {
@@ -35,10 +37,19 @@ gulp.task('style', function () {
     .pipe(server.stream());
 });
 
-gulp.task('scripts', function () {
-  return gulp.src('src/js/**/*.js')
-    .pipe(plumber())
-    .pipe(gulp.dest('build/js/'));
+gulp.task('scripts', function (cb) {
+  pump([
+        gulp.src('src/js/**/*.js'),
+        gulp.dest('build/js'),
+        uglify(),
+        rename({
+          suffix: '.min',
+          extname: '.js'
+        }),
+        gulp.dest('build/js')
+    ],
+    cb
+  );
 });
 
 gulp.task('imagemin', function () {

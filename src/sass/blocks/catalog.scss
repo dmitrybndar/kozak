@@ -1,0 +1,37 @@
+.catalog {
+  text-align: center;
+}
+
+.catalog__title {
+  display: none;
+  color: $red;
+
+  font-size: 20px;
+  font-weight: normal;
+  margin: 0;
+  margin-top: 22px;
+  margin-bottom: 17px;
+  margin-left: 20px;
+}
+
+.catalog__list {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.catalog__item {
+  margin: 20px auto;
+}
+
+
+@media ($media_desktop) {
+  .catalog {
+    width: 870px;
+    text-align: start;
+  }
+
+  .catalog__title {
+    display: block;
+  }
+
+}

@@ -13,9 +13,14 @@ body {
   font-size: 16px;
   line-height: 1.2;
   min-width: 320px;
+  letter-spacing: -0.6px;
 }
 
 img {
   width: 100%;
   height: auto;
+}
+
+a[href] {
+  text-decoration: none;
 }

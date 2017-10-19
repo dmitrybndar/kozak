@@ -1,17 +1,17 @@
 (function() {
 
-  var toogleMenuBtn = document.querySelector('.main-nav__toggle'),
-      nav           = document.querySelector('.main-nav');
+  function toggleMenu() {
+    var toggleMenuBtn = document.querySelector('.main-nav__toggle'),
+      nav             = document.querySelector('.main-nav');
 
-  toogleMenuBtn.addEventListener('click', function() {
-    if (nav.classList.contains('main-nav--open')) {
-      nav.classList.remove('main-nav--open');
-    } else {
-      nav.classList.add('main-nav--open');
-    }
-  });
+    toggleMenuBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
 
-  // Carousel
+      nav.classList.toggle('main-nav--open');
+    });
+  }
+  //End toggleMenu
 
   function carousel() {
     var width, // ширина слайда
@@ -79,5 +79,26 @@
       list.style.transform = 'translateX('+ position + 'px)';
     });
   }
-  carousel();
+  //End Carousel
+
+  function filterToggle() {
+    var filter       = document.querySelector('.filter'),
+        filterBtn    = filter.querySelector('.filter__btn'),
+        dropdownList = filter.querySelector('.filter__dropdown');
+
+    filterBtn.addEventListener('click', function(e) {
+      e.preventDefault();
+      e.stopPropagation();
+
+      filter.classList.toggle('filter--opened');
+    });
+  }
+  //End filterToggle
+
+  //Подключаем модули элементы которых присутствуют на странице
+  if ( document.querySelector('.main-nav') ) toggleMenu();
+  if ( document.getElementById('carousel') ) carousel();
+  if ( document.querySelector('.filter') ) filterToggle();
+
+
 })();

@@ -17,8 +17,14 @@
 .popular__list {
   width: 9999px;
   text-align: start;
+  display: flex;
 
   transition: transform .6s ease-in-out;
+}
+
+.popular__item {
+  display: block;
+  margin: 30px 16.5px;
 }
 
 .popular__title {
@@ -71,6 +77,10 @@
 }
 
 @media ($media_tablet) {
+  .popular__item {
+    margin: 45px 47.5px 60px;
+  }
+
   .popular__title {
     font-size: 30px;
 
@@ -122,6 +132,10 @@
     width: 1140px;
     padding-left: 0;
     padding-right: 0;
+  }
+
+  .popular__item {
+    margin: 35px 10px 65px;
   }
 
   .popular__title {

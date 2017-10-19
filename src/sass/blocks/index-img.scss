@@ -6,6 +6,7 @@
   max-width: 1920px;
   margin: 0 auto;
   padding-bottom: 7px;
+  margin-top: 42px;
 
   &::after {
     content: '';
@@ -23,6 +24,7 @@
   .index-img {
     padding-bottom: 19px;
     margin-bottom: 10px;
+    margin-top: 0;
 
     &::after {
       height: 6px;

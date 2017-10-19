@@ -1,12 +1,16 @@
 .product-card {
   width: 277px;
-  margin: 30px 14.5px;
-  padding-bottom: 10px;
-  display: inline-block;
+  padding-bottom: 100px;
+  position: relative;
 
   text-align: center;
   background: #fff;
   box-shadow: 2px 2px 8px 1px rgba(28, 28, 28, 0.2);
+  transition: all .5s;
+
+  &:hover {
+    box-shadow: 2px 2px 8px 2px rgba(28, 28, 28, 0.5);
+  }
 }
 
 .product-card__pic {
@@ -18,6 +22,7 @@
   margin-top: 15px;
   margin-bottom: 25px;
 
+  color: #000;
   text-transform: uppercase;
   font-size: 19px;
   font-weight: 600;
@@ -34,29 +39,48 @@
 
 .product-card__descr b {
   color: #000;
-  font-weight: normal;
+  font-weight: 600;
 }
 
 .product-card__price {
-  display: block;
-  margin-top: 20px;
-  margin-bottom: 20px;
+  padding-top: 10px;
+  padding-bottom: 10px;
 
+  position: absolute;
+  bottom: 30px;
+  left: 0;
+  right: 0;
+
+  text-align: center;
   font-size: 28px;
   font-weight: bold;
-  color: $red;
-}
+  color: #000;
 
-@media ($media_tablet) {
-  .product-card {
-    margin: 45px 46.5px 60px;
+  background: transparent url('../img/price-bg.png') center no-repeat;
+  background-size: 70%;
+
+  &--stock {
+    color: $red;
+    &::after {
+      content: '* акція!';
+      position: absolute;
+      bottom: 0;
+      left: 70px;
+      font-size: 15px;
+    }
   }
 }
 
 @media ($media_desktop) {
   .product-card {
     width: 360px;
-    margin: 35px 8px 65px;
+    padding-bottom: 130px;
+    height: 100%;
+  }
+
+  .product-card--catalog {
+    width: 268px;
+    padding-bottom: 100px;
   }
 
   .product-card__title {
@@ -65,9 +89,22 @@
     font-size: 24px;
   }
 
+  .product-card--catalog .product-card__title {
+    font-size: 19px;
+    font-weight: 600;
+    margin-top: 9px;
+    margin-bottom: 22px;
+    padding: 0 24px;
+  }
+
   .product-card__pic {
     width: 360px;
     height: 223px;
+  }
+
+  .product-card--catalog .product-card__pic {
+    width: 268px;
+    height: 166px;
   }
 
   .product-card__descr {
@@ -75,11 +112,18 @@
     font-size: 19px;
   }
 
-  .product-card__price {
-    margin-top: 20px;
-    margin-bottom: 30px;
+  .product-card--catalog .product-card__descr {
+    width: 220px;
+    font-size: 14px;
+  }
 
+  .product-card__price {
+    padding: 15px 0;
     font-size: 37px;
+  }
+
+  .product-card--catalog .product-card__price {
+    font-size: 27px;
   }
 }
 

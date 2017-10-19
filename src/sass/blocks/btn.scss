@@ -12,15 +12,26 @@
   font-size: 13px;
   font-weight: bold;
 
+  &--catalog {
+    font-size: 20px;
+    margin-top: 30px;
+  }
+
   &:hover {
     opacity: .7;
   }
 }
 
+
 @media ($media_desktop) {
   .btn {
     font-size: 20px;
     padding: 15px 46px;
+  }
+
+  .btn--catalog {
+    margin-top: 45px;
+    margin-left: 10px;
   }
 }
 
