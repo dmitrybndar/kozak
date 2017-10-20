@@ -17,11 +17,36 @@
     margin-top: 30px;
   }
 
+  &--product {
+    font-size: 17px;
+    padding: 15px;
+    width: 234px;
+  }
+
+  &--other {
+    padding: 15px 18px;
+
+    background: transparent;
+    color: $accent;
+    border: 2px solid $accent;
+    font-size: 20px;
+  }
+
   &:hover {
     opacity: .7;
   }
 }
 
+@media ($media_tablet) {
+  .btn--other {
+    display: none;
+  }
+
+  .btn--product {
+    width: 400px;
+    margin-top: 30px;
+  }
+}
 
 @media ($media_desktop) {
   .btn {
@@ -32,6 +57,17 @@
   .btn--catalog {
     margin-top: 45px;
     margin-left: 10px;
+  }
+
+  .btn--product {
+    width: auto;
+    padding: 15px;
+    margin-top: 0;
+
+    position: absolute;
+    left: 36px;
+    right: 36px;
+    bottom: 25px;
   }
 }
 

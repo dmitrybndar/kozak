@@ -39,7 +39,8 @@
 
 .product-card__descr b {
   color: #000;
-  font-weight: 600;
+  display: inline-block;
+  margin-top: 2px;
 }
 
 .product-card__price {

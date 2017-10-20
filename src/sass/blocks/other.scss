@@ -1,0 +1,95 @@
+.other {
+  display: none;
+}
+
+.other__title {
+  display: inline-block;
+  vertical-align: top;
+  text-align: left;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  padding-left: 24px;
+  padding-right: 40px;
+  padding-top: 5px;
+  padding-bottom: 5px;
+  position: relative;
+
+  font-size: 30px;
+  font-weight: normal;
+  color: #000;
+
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    width: 8px;
+    background-color: $accent;
+  }
+}
+
+.other__list {
+  list-style-type: none;
+  margin: 0;
+  margin-bottom: 14px;
+  padding: 0;
+  display: flex;
+  justify-content: space-between;
+}
+
+.other__card {
+  display: block;
+  height: 100%;
+  width: 220px;
+
+  background: #fff;
+  box-shadow: 2px 2px 8px 1px rgba(28, 28, 28, 0.2);
+}
+
+.other__card:hover .other__name {
+  color: $red;
+}
+
+.other__pic {
+  display: block;
+}
+
+.other__name {
+  margin: 0;
+  padding: 15px 0;
+  text-align: center;
+
+  font-size: 18px;
+  text-transform: uppercase;
+  color: #000;
+  font-weight: 600;
+}
+
+@media ($media_tablet) {
+  .other {
+    display: block;
+    margin-top: 50px;
+  }
+}
+
+
+@media ($media_desktop) {
+  .other__title {
+    margin: 0;
+    margin-left: 30px;
+    margin-bottom: 22px;
+  }
+
+  .other__list {
+    padding-left: 30px;
+  }
+
+  .other__card {
+    width: 270px;
+  }
+
+  .other__pic {
+    width: 270px;
+  }
+}
