@@ -4,12 +4,16 @@
   padding: 15px 0 60px;
 }
 
-.content__wrapper {
-  @include container;
+.content--contacts-page {
+  padding-bottom: 0;
+
+  &::before {
+    display: none;
+  }
 }
 
-@media ($media_tablet) {
-
+.content__wrapper {
+  @include container;
 }
 
 @media ($media_desktop) {

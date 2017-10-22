@@ -5,15 +5,12 @@
   display: flex;
   align-items: center;
   justify-content: space-around;
-}
 
-.product-page .page-title,
-.catalog-page .page-title{
   background: $dark url('../img/catalog-title-img.jpg') center no-repeat;
   background-size: cover;
 }
 
-.contacts-page .page-title {
+.page-title--contacts {
   background: $dark url('../img/contacts-title-img.jpg') center no-repeat;
   background-size: cover;
 }

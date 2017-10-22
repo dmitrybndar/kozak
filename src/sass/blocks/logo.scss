@@ -6,16 +6,18 @@
 
 .logo img {
   position: absolute;
-  left: 0;
+  left: 5px;
   z-index: 1;
 
   width: 64px;
 
   @media ($media_tablet) {
+    left: 10px;
     width: 150px;
   }
 
   @media ($media_desktop) {
+    left: 30px;
     width: 200px;
   }
 }

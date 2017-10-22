@@ -30,12 +30,53 @@
     </nav>
   </header>
 
-  <div class="page-title">
+  <div class="page-title page-title--contacts">
     <h1 class="page-title__text">Контакти</h1>
   </div>
+    <main class="content content--contacts-page">
+      <section class="contacts">
 
+        <div class="contacts__top-section">
+          <h2 class="contacts__title">Зв'яжіться з нами!</h2>
+          <div class="contacts__info">
+            <p class="contacts__tel">
+              <a href="tel:+380509390609">+38 050 939 06 09</a>
+              <a href="tel:+380639370474">+38 063 93 704 74</a>
+            </p>
+            <p class="contacts__email">
+              <a href="mailto:Kozak.MK@yandex.ru">kozak.mk@yandex.ru</a>
+            </p>
+          </div>
+        </div>
 
+        <div class="contacts__wrapper">
+          <form class="form" action="#" method="post">
+            <p class="form__headline">Заповніть форму</p>
+            <p class="form__row">
+              <input type="text" name="name" placeholder="Ваше ім'я:">
+            </p>
+            <p class="form__row form__row--col-2">
+              <input type="tel" name="phone" placeholder="Ваш телефон:">
+              <input type="email" name="email" placeholder="Ваш e-mail:">
+            </p>
+            <p class="form__row">
+              <textarea name="message" placeholder="Ваше повідомлення:"></textarea>
+            </p>
+            <p class="form__row">
+              <button type="submit" class="btn btn--form">Надіслати повідомлення</button>
+            </p>
+          </form>
 
+          <div class="map">
+            <p class="map__title">
+              <span class="map__arrow"></span>
+              <span class="map__title-text">Наша адреса</span></p>
+              <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m12!1m3!1d2150.053249158024!2d36.251022501662945!3d50.14507661011439!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!5e0!3m2!1sru!2sru!4v1508701297240" frameborder="0" style="border:0" allowfullscreen></iframe>
+          </div>
+        </div>
+
+      </section>
+    </main>
   <footer class="page-footer">
     <p class="page-footer__copyright">
       © 2017 М'ясокомбінат "КОЗАК" | Слобожанський продукт. Все права защищены
